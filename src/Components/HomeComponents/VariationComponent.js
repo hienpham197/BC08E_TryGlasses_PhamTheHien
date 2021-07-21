@@ -109,7 +109,7 @@ export default class VariationComponent extends Component {
     return (
       <div>
         <PreviewComponent selectedGlasses={this.state.glass} />
-        <div className="row p-5">{this.renderVariationSelection()}</div>
+        <div className="row p-5 mt-2">{this.renderVariationSelection()}</div>
       </div>
     );
   }

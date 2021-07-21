@@ -1,12 +1,10 @@
-import './App.css';
-import HeaderComponent from './Components/HeaderComponents/HeaderComponent';
-import HomeComponent from './Components/BodyComponents/HomeComponent';
+import "./App.css";
+import TryGlasses from "./Components/TryGlasses";
 
 function App() {
   return (
     <div className="App">
-      <HeaderComponent />
-      <HomeComponent />
+      <TryGlasses />
     </div>
   );
 }

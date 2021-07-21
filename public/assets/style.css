@@ -1,24 +1,14 @@
 body {
-  background-image: url("../glassesImage/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../glassesImage/background.jpg") center / cover no-repeat;
 }
 
 header {
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 3rem 0;
-}
-
-section.body {
-  padding: 3rem 0;
+  padding: 2.5rem;
 }
 
 .preview-panel {
-  background-image: url("../glassesImage/model.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background: url("../glassesImage/model.jpg") center / contain no-repeat;
 }
 
 .preview-panel img:first-child {
@@ -37,9 +27,10 @@ section.body {
   bottom: 0;
   padding: 0.5rem;
   text-align: left;
+  width: 92%;
 }
 
-.selected-info .name {
+.name {
   font-weight: bold;
   color: #00008b;
 }

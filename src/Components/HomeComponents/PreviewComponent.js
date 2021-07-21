@@ -17,7 +17,7 @@ export default class PreviewComponent extends Component {
       return (
         <Fragment>
           <div className="col-4 preview-panel">
-            <img className="d-none" src="./glassesImage/model.jpg" />
+            <img className="w-100" src="./glassesImage/model.jpg" />
             <img
               className="selected-variation"
               src={`./glassesImage/v${selectedGlasses.id}.png`}
@@ -28,7 +28,7 @@ export default class PreviewComponent extends Component {
             </div>
           </div>
           <div className="col-4">
-            <img src="./glassesImage/model.jpg" className="w-100" />
+            <img className="w-100" src="./glassesImage/model.jpg" />
           </div>
         </Fragment>
       );
