@@ -34,3 +34,14 @@ header {
   font-weight: bold;
   color: #00008b;
 }
+
+.glass-variation {
+  opacity: 0.9;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.glass-variation:hover {
+  opacity: 1;
+  border: none;
+}

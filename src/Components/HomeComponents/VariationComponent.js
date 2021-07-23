@@ -73,15 +73,16 @@ export default class VariationComponent extends Component {
   };
 
   handleVariationChange = async (id) => {
-    let { selectedGlasses } = this.glassesList.find(function (glasses, index) {
-      if (glasses.id == id) return true;
+    let { selectedGlasses } = this.glassesList.find((glasses, index) => {
+      if (glasses.id == id) {
+        return true;
+      }
     });
 
     for (let i = 0; i < this.glassesList.length; i++) {
       let glasses = this.glassesList[i];
       if (glasses.id == id) {
         selectedGlasses = glasses;
-        break;
       }
     }
     await this.setState({
