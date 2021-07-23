@@ -73,13 +73,15 @@ export default class VariationComponent extends Component {
   };
 
   handleVariationChange = async (id) => {
-    let selectedGlasses = this.glassesList.find((glasses, id) => {
-      if (glasses.id === id) return true;
+    let { selectedGlasses } = this.glassesList.find((glasses, index) => {
+      if (glasses.id == id) {
+        return true;
+      }
     });
 
     for (let i = 0; i < this.glassesList.length; i++) {
       let glasses = this.glassesList[i];
-      if (glasses.id === id) {
+      if (glasses.id == id) {
         selectedGlasses = glasses;
       }
     }
@@ -91,13 +93,13 @@ export default class VariationComponent extends Component {
   renderVariationSelection = () => {
     return this.glassesList.map((glass, index) => {
       return (
-        <div className="col-2" key={index}>
+        <div className="col-2">
           <button
             className="glass-variation"
             data-id={glass.id}
             onClick={() => this.handleVariationChange(glass.id)}
           >
-            <img className="w-100" src={glass.url} alt="..." />
+            <img className="w-100" src={glass.url} />
           </button>
         </div>
       );
